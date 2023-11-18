@@ -1,2 +1,2 @@
-# lightmatrix
+# light matrix
 Tech Art Project
