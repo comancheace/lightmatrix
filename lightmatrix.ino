@@ -31,12 +31,12 @@ int value_8 = 0;
 int value_9 = 0;
 
 const int PIN_RED  = 2;
-const int PIN_RED_2  = 5;
-const int PIN_RED_3 = 6;
-const int PIN_GREEN = 3;
-const int PIN_GREEN_2 = 7;
-const int PIN_GREEN_3 = 8;
-const int PIN_BLUE = 4;
+const int PIN_RED_2  = 3;
+const int PIN_RED_3 = 4;
+const int PIN_GREEN = 5;
+const int PIN_GREEN_2 = 6;
+const int PIN_GREEN_3 = 7;
+const int PIN_BLUE = 8;
 const int PIN_BLUE_2  = 9;
 const int PIN_BLUE_3  = 10;
 
@@ -84,7 +84,7 @@ void setup() {
   myservo9.attach(38);
 } 
 void loop() {
-	value = analogRead(sensorPin);
+  value = analogRead(sensorPin);
   value_2 = analogRead(sensorPin_2);
   value_3 = analogRead(sensorPin_3);
   value_4 = analogRead(sensorPin_4);
@@ -122,38 +122,38 @@ void loop() {
   delay(10);
   tone(27, value_3, 10);
   delay(10);
-  tone(29, value, 10);
+  tone(29, value_4, 10);
   delay(10);
-  tone(31, value_2, 10);
+  tone(31, value_5, 10);
   delay(10);
-  tone(33, value_3, 10);
+  tone(33, value_6, 10);
   delay(10);
-  tone(35, value, 10);
+  tone(35, value_7, 10);
   delay(10);
-  tone(37, value_2, 10);
+  tone(37, value_8, 10);
   delay(10);
-  tone(39, value_3, 10);
+  tone(39, value_9, 10);
   delay(10);
   
   analogWrite(PIN_RED, rgb_val);
   analogWrite(PIN_GREEN, rgb_val_2);
   analogWrite(PIN_BLUE, rgb_val_3);
-  analogWrite(PIN_RED_2, rgb_val);
-  analogWrite(PIN_GREEN_2, rgb_val_2);
-  analogWrite(PIN_BLUE_2, rgb_val_3);
-  analogWrite(PIN_RED_3, rgb_val);
-  analogWrite(PIN_GREEN_3, rgb_val_2);
-  analogWrite(PIN_BLUE_3, rgb_val_3);
+  analogWrite(PIN_RED_2, rgb_val_4);
+  analogWrite(PIN_GREEN_2, rgb_val_5);
+  analogWrite(PIN_BLUE_2, rgb_val_6);
+  analogWrite(PIN_RED_3, rgb_val_7);
+  analogWrite(PIN_GREEN_3, rgb_val_8);
+  analogWrite(PIN_BLUE_3, rgb_val_9);
 
   myservo.write(servo_val);
   myservo2.write(servo_val_2);
   myservo3.write(servo_val_3);
-  myservo4.write(servo_val);
-  myservo5.write(servo_val_2);
-  myservo6.write(servo_val_3);
-  myservo7.write(servo_val);
-  myservo8.write(servo_val_2);
-  myservo9.write(servo_val_3);
+  myservo4.write(servo_val_4);
+  myservo5.write(servo_val_5);
+  myservo6.write(servo_val_6);
+  myservo7.write(servo_val_7);
+  myservo8.write(servo_val_8);
+  myservo9.write(servo_val_9);
 
   delay(10);
 }
