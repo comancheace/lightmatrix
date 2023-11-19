@@ -61,7 +61,7 @@ int servo_val_8 = 0;
 int servo_val_9 = 0;
 
 void setup() {
-	Serial.begin(9600);
+  Serial.begin(9600);
   
   pinMode(PIN_RED,   OUTPUT);
   pinMode(PIN_GREEN, OUTPUT);
